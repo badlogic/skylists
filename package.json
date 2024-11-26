@@ -1,13 +1,13 @@
 {
   "app": {
-    "domain": "test.app.io",
-    "description": "A super duper app",
+    "domain": "skylists.mariozechner.at",
+    "description": "Quickly manage which of your Bluesky follows go into which of your lists",
     "email": "contact@mariozechner.at",
     "host": "slayer.marioslab.io",
     "hostDir": "/home/badlogic",
-    "name": "app",
+    "name": "skylists",
     "serverPort": 3333,
-    "needsDb": true
+    "needsDb": false
   },
   "dependencies": {
     "body-parser": "^1.20.3",
@@ -44,7 +44,7 @@
     "tailwindcss": "3.4.15"
   },
   "license": "MIT",
-  "name": "__app_name__",
+  "name": "skylists",
   "scripts": {
     "build": "npm run build:css && npm run build:site && npm run build:server",
     "build:css": "npx tailwindcss -i html/styles.css -o html/build/styles-bundle.css",
