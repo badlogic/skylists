@@ -34,7 +34,7 @@ export class MainPage extends BaseElement {
     }
 
     render() {
-        return html`<div class="min-h-[100%] flex flex-col items-center p-4 gap-4 max-w-[600px]">
+        return html`<div class="min-h-[100%] flex flex-col items-center p-4 gap-4 max-w-[600px] mx-auto">
             <h1>Skylists</h1>
             ${this.renderLogin()} ${this.renderEditing()}
             <div class="flex-grow"></div>

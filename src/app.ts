@@ -23,7 +23,7 @@ export class App extends LitElement {
         router.addRoute(
             "/",
             () => html`<main-page></main-page>`,
-            () => "app"
+            () => "Skylists"
         );
         router.addRoute(
             "/404",
