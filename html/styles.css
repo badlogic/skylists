@@ -6,25 +6,27 @@
 :root {
     --background: #ffffff;
     --text: #111111;
-    --muted: #4b5563;
+    --muted: #8a8e94;
     --link: #3b82f6;
-    --border: ##9ca3af;
+    --border: #ccc;
+    --error: #cc0000;
 }
 
 /* Dark theme variables */
 .dark {
     --background: #111111;
     --text: #ffffff;
-    --muted: #4b5563;
+    --muted: #8a8e94;
     --link: #3b82f6;
     --border: #333;
+    --error: #cc0000;
 }
 
 @layer base {
     html,
     body {
         @apply w-full leading-normal;
-        @apply text-text
+        @apply text-text;
     }
 
     .hidden {
@@ -52,6 +54,35 @@
 @layer components {
     * {
         @apply outline-none;
+    }
+
+    button {
+        @apply bg-link text-white rounded-lg p-2 w-full;
+    }
+
+    button:disabled,
+    input:disabled {
+        @apply opacity-50 cursor-not-allowed;
+    }
+
+    .green-pill {
+        text-align: end;
+        border: 1px solid #09ad0e;
+        background: #09ad0e;
+        padding: 0.25em;
+        border-radius: 4px;
+        color: white;
+        font-size: 0.75rem;
+    }
+
+    .red-pill {
+        text-align: end;
+        border: 1px solid #ad2409;
+        background: #ad2409;
+        padding: 0.25em;
+        border-radius: 4px;
+        color: white;
+        font-size: 0.75rem;
     }
 }
 

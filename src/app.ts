@@ -27,7 +27,7 @@ export class App extends LitElement {
         );
         router.addRoute(
             "/404",
-            () => i18n("Whoops, that page doesn't exist"),
+            () => html`i18n("Whoops, that page doesn't exist")`,
             () => "404"
         );
         router.addRoute(

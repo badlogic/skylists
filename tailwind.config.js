@@ -10,6 +10,7 @@ module.exports = {
                 muted: "var(--muted)",
                 link: "var(--link)",
                 border: "var(--border)",
+                error: "var(--error)"
             },
             screens: {
                 pwa: { raw: "(display-mode: standalone)" },
