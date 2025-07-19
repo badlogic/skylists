@@ -19,8 +19,12 @@ services:
             context: .
             dockerfile: Dockerfile
         stop_grace_period: 0s
+        env_file: .env
         environment:
             PORT: 3333
+            SKYLISTS_DB: ${SKYLISTS_DB}
+            SKYLISTS_DB_USER: ${SKYLISTS_DB_USER}
+            SKYLISTS_DB_PASSWORD: ${SKYLISTS_DB_PASSWORD}
 
 
         volumes:
